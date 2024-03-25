@@ -155,7 +155,9 @@ app.put('/:id', async (req, res) => {
   res.sendStatus(200);
 });
 
-app.get('/', (req, res) => {
+app.get('/', async (req, res) => {
+  await db.read();
+
   const hideDone = !!req.query.hidedone;
   const hideNonPromotional = !!req.query.hidenonpromo;
 
