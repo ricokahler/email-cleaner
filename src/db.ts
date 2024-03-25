@@ -33,6 +33,7 @@ export async function ensure<TProperty extends keyof Entry>(
   if (cached) return cached;
 
   const result = await getter();
+  await db.read();
 
   await db.update(({ entries }) => {
     const index = entries.findIndex((entry) => entry.id === id);
