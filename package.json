@@ -1,0 +1,41 @@
+{
+  "name": "email-cleaner",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "tsx ./src/index.ts",
+    "server": "tsx ./src/server.ts"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@google-cloud/local-auth": "^3.0.1",
+    "@ricokahler/lazy": "^2.0.4",
+    "@types/express": "^4.17.21",
+    "common-tags": "^1.8.2",
+    "express": "^4.19.1",
+    "googleapis": "^131.0.0",
+    "jsdom": "^24.0.0",
+    "jsonschema": "^1.4.1",
+    "lowdb": "^7.0.1",
+    "mime-types": "^2.1.35",
+    "ollama": "^0.4.6",
+    "playwright": "^1.41.2",
+    "prettier": "^3.2.5",
+    "sanity": "^3.29.0",
+    "tiktoken": "^1.0.13",
+    "zod": "^3.22.4"
+  },
+  "devDependencies": {
+    "@sanity/eslint-config-studio": "^3.0.1",
+    "@types/common-tags": "^1.8.4",
+    "@types/node": "^20.11.17",
+    "eslint": "^8.56.0",
+    "tsx": "^4.7.0",
+    "typescript": "^5.4.3"
+  }
+}
